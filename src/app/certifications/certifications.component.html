@@ -1,0 +1,25 @@
+<section id="certifications" class="full-page-section bg-light page-transition">
+  <div class="container">
+    <div class="text-center mb-5 section-fade">
+      <h2 class="display-4 fw-bold text-dark mb-3">Certifications</h2>
+      <div class="bg-primary mx-auto section-title-underline" style="width: 80px; height: 4px"></div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div *ngFor="let cert of certificates" class="col-lg-4">
+        <div class="card-wrapper certificate-wrapper">
+          <div class="card h-100 border-0 shadow-lg card-hover section-fade certificate-card" style="background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%)">
+            <div class="card-body text-center p-4">
+              <i class="fas fa-certificate text-primary fs-1 mb-3"></i>
+              <h4 class="h5 fw-bold text-dark mb-2">{{ cert.name }}</h4>
+              <p class="text-primary fw-semibold mb-1">{{ cert.issuer }}</p>
+              <p class="text-muted small mb-2">{{ cert.date }}</p>
+              <span class="badge bg-primary bg-opacity-10 text-primary">
+                {{ cert.type }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

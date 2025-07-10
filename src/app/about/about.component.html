@@ -1,0 +1,68 @@
+<section id="about" class="full-page-section bg-white page-transition">
+  <div class="container">
+    <div class="text-center mb-5 section-fade">
+      <h2 class="display-4 fw-bold text-dark mb-3">About Me</h2>
+      <div class="bg-primary mx-auto section-title-underline" style="width: 80px; height: 4px"></div>
+    </div>
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 section-fade">
+        <h3 class="h2 fw-semibold mb-4 text-dark">Education & Background</h3>
+        <div class="card bg-light border-0 mb-4">
+          <div class="card-body p-4">
+            <h4 class="fw-semibold text-primary">Bachelor of Technology</h4>
+            <p class="text-muted mb-1">Computer Science and Engineering</p>
+            <p class="text-muted mb-1">Siddharth Institute of Engineering and Technology</p>
+            <p class="text-muted mb-0">June 2018 - May 2022 | GPA: 7.67</p>
+          </div>
+        </div>
+        <p class="text-muted lead">
+          I'm a passionate Software Engineer with experience in both frontend and backend development. 
+          I love creating user-friendly applications and solving complex problems with innovative solutions.
+        </p>
+      </div>
+      <div class="col-lg-6 section-fade">
+        <h3 class="h2 fw-semibold mb-4 text-dark">Technical Skills</h3>
+        <div class="mb-4">
+          <h4 class="fw-semibold mb-3 text-primary">Languages</h4>
+          <div class="d-flex flex-wrap gap-2">
+            <span *ngFor="let skill of skills.languages" class="badge bg-primary bg-opacity-10 text-primary fs-6 skill-badge">
+              {{ skill }}
+            </span>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h4 class="fw-semibold mb-3 text-primary">Frameworks</h4>
+          <div class="d-flex flex-wrap gap-2">
+            <span *ngFor="let skill of skills.frameworksAndLibraries" class="badge bg-info bg-opacity-10 text-info fs-6 skill-badge">
+              {{ skill }}
+            </span>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h4 class="fw-semibold mb-3 text-primary">Databases</h4>
+          <div class="d-flex flex-wrap gap-2">
+            <span *ngFor="let skill of skills.databases" class="badge bg-success bg-opacity-10 text-success fs-6 skill-badge">
+              {{ skill }}
+            </span>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h4 class="fw-semibold mb-3 text-primary">Tools</h4>
+          <div class="d-flex flex-wrap gap-2">
+            <span *ngFor="let skill of skills.tools" class="badge bg-danger bg-opacity-10 text-danger fs-6 skill-badge">
+              {{ skill }}
+            </span>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h4 class="fw-semibold mb-3 text-primary">Soft Skills</h4>
+          <div class="d-flex flex-wrap gap-2">
+            <span *ngFor="let skill of skills.softSkills" class="badge bg-warning bg-opacity-10 text-warning fs-6 skill-badge">
+              {{ skill }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

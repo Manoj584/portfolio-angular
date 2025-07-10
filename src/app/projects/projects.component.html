@@ -1,0 +1,37 @@
+<section id="projects" class="full-page-section bg-white page-transition">
+  <div class="container">
+    <div class="text-center mb-5 section-fade">
+      <h2 class="display-4 fw-bold text-dark mb-3">Featured Projects</h2>
+      <div class="bg-primary mx-auto section-title-underline" style="width: 80px; height: 4px"></div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div *ngFor="let project of projects" class="col-lg-6">
+        <div class="card-wrapper project-wrapper h-100">
+          <div class="card h-100 border-0 shadow-lg card-hover section-fade project-card">
+            <div class="card-body p-4">
+              <h3 class="h4 fw-bold text-dark mb-3">{{ project.title }}</h3>
+              <p class="text-muted mb-4">{{ project.description }}</p>
+              <div class="mb-4">
+                <h4 class="h6 fw-semibold text-primary mb-3">Technologies Used</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span *ngFor="let tech of project.technologies" class="badge bg-primary bg-opacity-10 text-primary">
+                    {{ tech }}
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h4 class="h6 fw-semibold text-primary mb-3">Key Features</h4>
+                <ul class="list-unstyled">
+                  <li *ngFor="let feature of project.features" class="d-flex align-items-start mb-2">
+                    <i class="fas fa-star text-warning me-2 mt-1"></i>
+                    <span class="text-muted">{{ feature }}</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
